@@ -1,0 +1,223 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(52, 116, 255);
+    z-index: 2;
+    display: flex;
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-left: 500px;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 20pt;
+    font-weight: 900;
+    color: white;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    margin-top: 100px;
+    color: rgb(52, 116, 255);
+    text-align: center;
+}
+
+.beneficios {
+    text-align: left;
+    background-color: rgb(52, 116, 255);
+    color:white;
+    font-size: 14pt;
+    font-weight: 800;
+    padding: 10px;
+    width: 490px;
+    height: 645px;
+    border-radius: 10px;
+    display: grid;
+    justify-self: center;
+}
+
+.secao-clientes {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:  rgb(52, 116, 255);
+}
+
+.clientes {
+    display: flex;
+    justify-self: center;
+}
+
+.cliente {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nome-cliente {
+    color: rgb(0, 81, 255);
+    font-size: 12pt;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.comentario-cliente {
+    margin: 10px;
+}
+
+.promocao {
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.titulo-promocao {
+    justify-self: center;
+    font-size: 20pt;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.preco-antigo {
+    font-size: 20pt;
+    font-weight: 900;
+    text-decoration:line-through;
+    color: rgb(255, 44, 44);
+    margin: 10px;
+}
+
+.preco {
+    font-size: 50pt;
+    font-weight: 900;
+    color: rgb(45, 7, 235);
+    margin: 10px;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 150px auto 50px auto;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+
+}
+
+.formulario div {
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    font-weight: 700;
+    color: rgb(52, 116, 255);
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 8px;
+    font-size: 14pt;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+    border-color: rgb(52, 116, 255);
+    outline: none;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    height: 100px;
+    width: 100%;
+    font-size: 50px;
+    background-color: rgb(69, 255, 69);
+    border-radius: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.numero-cartao,
+.validade-cartao,
+.cvv-cartao,
+.pix-info {
+    margin-bottom: 20px;
+}
+
+.numero-cartao label,
+.validade-cartao label,
+.cvv-cartao label,
+.pix-info label {
+    display: block;
+    font-weight: 700;
+    color: rgb(52, 116, 255);
+    margin-bottom: 5px;
+}
+
+.numero-cartao input,
+.validade-cartao input,
+.cvv-cartao input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 8px;
+    font-size: 14pt;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.numero-cartao input:focus,
+.validade-cartao input:focus,
+.cvv-cartao input:focus {
+    border-color: rgb(52, 116, 255);
+    outline: none;
+}
+
+.botao-finalizada {
+    display: flex;
+    justify-content: center;
+}
+
+.finalizada {
+    text-align: center;
+    color: rgb(52, 116, 255);
+}
+

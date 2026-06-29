@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Drinkther</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            Drinkther
+        </div>
+        <ul>
+            <li><a href="index.html#inicio">Início</a></li>
+            <li><a href="index.html#beneficios">Benefícios</a></li>
+            <li><a href="index.html#comentarios">Comentários</a></li>
+            <li><a href="index.html#comprar">Comprar</a></li>
+        </ul>
+    </div>
+
+    <form class="formulario">
+  
+    <div class="nome">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    </div>
+
+    <div class="email">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+    </div>
+
+    <div class="Endereço">
+        <label for="endereco">Endereço:</label>
+        <textarea id="endereco" name="endereco" rows="4" placeholder="Digite seu Endereço" required></textarea>
+    </div>
+
+    <div class="pagamento">
+    <label for="pagamento">Forma de pagamento:</label>
+        <select id="pagamento" name="pagamento" required onchange="mostrarPagamento()">
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="pix">Pix</option>
+        <option value="cartao_credito">Cartão de crédito</option>
+        <option value="cartao_debito">Cartão de débito</option>
+        </select>
+    </div>
+
+    <div id="dados-cartao" style="display: none;">
+        <div class="numero-cartao">
+            <label for="numero">Número do cartão:</label>
+            <input type="text" id="numero" name="numero" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="validade-cartao">
+            <label for="validade">Validade:</label>
+            <input type="text" id="validade" name="validade" placeholder="MM/AA">
+        </div>
+        <div class="cvv-cartao">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123">
+        </div>
+    </div>
+
+    <div id="dados-pix" style="display: none;">
+        <div class="pix-info">
+            <label>Escaneie o QR Code abaixo para pagar via Pix:</label>
+            <img src="img/qrcode.png" style="width: 200px; display: block; margin: auto;">
+        </div>
+    </div>
+
+    <div class="botao-finalizada">
+        <a href="final.html">
+            <button style="width: 500px;">
+                Finalizar compra
+            </button>
+        </a>
+    </div>
+</form>
+</body>
+</html>
