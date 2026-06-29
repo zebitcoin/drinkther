@@ -1,3 +1,36 @@
+<details>
+  <summary>Cick here for english version  🇺🇸 </summary>
+
+  # Drinkther - Thermos Bottle Sales Landing Page
+
+## About the Project
+
+This project was developed as the final assignment for the Web Development Workshop of the Programming Club at **UNIFESSPA (Federal University of the South and Southeast of Pará)**. The project consists of a landing page for selling a fictitious thermos bottle named "Drinkther", which promises to keep the ideal temperature of drinks for hours.
+
+## Objective
+
+The objective of this project is to apply the knowledge acquired during the workshop, using only HTML, CSS, and JavaScript to create a complete and functional web page without the use of frameworks or external libraries.
+
+## Learnings
+
+During the development of this project, fundamental concepts of web development were applied:
+- Semantic structuring with HTML
+- Styling with CSS
+- Event handling with JavaScript
+- Events and interactivity
+- Navigation between pages
+- Forms
+
+## How to Run
+
+1. Clone the repository:
+```bash
+git clone (https://github.com/your-username/drinkther.git
+```
+2. Open the index.html file in your browser.
+3. Browse the website and place a test order.
+</details>
+
 # Drinkther - Landing page de Venda de Garrafa Térmica
 
 ## Sobre o Projeto
