@@ -21,7 +21,7 @@
         </ul>
     </div>
 
-    <form class="formulario">
+    <form class="formulario" onsubmit="return validarFormulario(event)">
   
     <div class="nome">
         <label for="nome">Nome:</label>
@@ -71,12 +71,11 @@
     </div>
 
     <div class="botao-finalizada">
-        <a href="final.html">
-            <button style="width: 500px;">
-                Finalizar compra
-            </button>
-        </a>
+        <button type="submit" style="width: 500px;">
+            Finalizar compra
+        </button>
     </div>
+
 </form>
 </body>
 </html>

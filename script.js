@@ -14,3 +14,34 @@ function mostrarPagamento() {
         dadosPix.style.display = 'none';
     }
 }
+
+function validarFormulario(event) {
+    event.preventDefault();
+    
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var endereco = document.getElementById('endereco').value;
+    var pagamento = document.getElementById('pagamento').value;
+    
+    if (!nome || !email || !endereco || !pagamento) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return false;
+    }
+    
+    var dados = {
+        nome: nome,
+        email: email,
+        endereco: endereco,
+        pagamento: pagamento,
+        numero: document.getElementById('numero') ? document.getElementById('numero').value : '',
+        validade: document.getElementById('validade') ? document.getElementById('validade').value : '',
+        cvv: document.getElementById('cvv') ? document.getElementById('cvv').value : '',
+        data: new Date().toLocaleString()
+    };
+    
+    var pedidos = JSON.parse(localStorage.getItem('pedidos')) || [];
+    pedidos.push(dados);
+    localStorage.setItem('pedidos', JSON.stringify(pedidos));
+    
+    window.location.href = 'final.html';
+}
