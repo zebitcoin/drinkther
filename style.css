@@ -3,9 +3,10 @@ html {
 }
 
 body {
-    margin: auto;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(255, 255, 255);
+    padding-top: 80px;
 }
 
 .navbar {
@@ -16,69 +17,97 @@ body {
     background-color: rgb(52, 116, 255);
     z-index: 2;
     display: flex;
-
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 .navbar ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    margin-left: 500px;
-    padding: 15px;
+    margin: 0;
+    padding: 0;
+    flex: 1;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
 .logo {
     font-size: 20pt;
     font-weight: 900;
     color: white;
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
 }
 
 .conteudo {
-    margin-top: 100px;
+    margin-top: 20px;
     color: rgb(52, 116, 255);
     text-align: center;
+    padding: 0 20px;
+}
+
+.conteudo img {
+    max-width: 100%;
+    height: auto;
 }
 
 .beneficios {
     text-align: left;
     background-color: rgb(52, 116, 255);
-    color:white;
+    color: white;
     font-size: 14pt;
     font-weight: 800;
-    padding: 10px;
-    width: 490px;
-    height: 645px;
+    padding: 20px;
     border-radius: 10px;
-    display: grid;
-    justify-self: center;
+    max-width: 490px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.beneficios img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto 0;
 }
 
 .secao-clientes {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color:  rgb(52, 116, 255);
+    padding: 20px;
+    background-color: rgb(52, 116, 255);
+}
+
+.secao-clientes h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    padding: 0 20px;
 }
 
 .clientes {
     display: flex;
-    justify-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .cliente {
     background-color: rgb(255, 255, 255);
     width: 300px;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
+    box-sizing: border-box;
+    flex: 1 1 280px;
+    max-width: 350px;
 }
 
 .nome-cliente {
@@ -86,30 +115,28 @@ body {
     font-size: 12pt;
     font-weight: 800;
     margin-bottom: 10px;
-    margin-left: 10px;
 }
 
 .comentario-cliente {
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .promocao {
-    padding-top: 20px;
+    padding: 20px;
     background-color: rgb(255, 255, 255);
     text-align: center;
 }
 
 .titulo-promocao {
-    justify-self: center;
     font-size: 20pt;
-    width: 50%;
-    margin-top: 50px;
+    max-width: 90%;
+    margin: 50px auto 20px;
 }
 
 .preco-antigo {
     font-size: 20pt;
     font-weight: 900;
-    text-decoration:line-through;
+    text-decoration: line-through;
     color: rgb(255, 44, 44);
     margin: 10px;
 }
@@ -123,11 +150,11 @@ body {
 
 .formulario {
     max-width: 600px;
-    margin: 150px auto 50px auto;
-    padding: 30px;
+    margin: 20px auto 50px auto;
+    padding: 30px 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-
+    box-sizing: border-box;
 }
 
 .formulario div {
@@ -173,6 +200,7 @@ button {
     border-radius: 50px;
     margin-bottom: 50px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .numero-cartao,
@@ -219,5 +247,182 @@ button {
 .finalizada {
     text-align: center;
     color: rgb(52, 116, 255);
+    padding: 0 20px;
 }
 
+.finalizada img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pix-info img {
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 120px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .logo {
+        font-size: 24pt;
+        margin-bottom: 5px;
+    }
+    
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .navbar a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .conteudo h1 {
+        font-size: 1.5em;
+    }
+    
+    .conteudo h2 {
+        font-size: 1.2em;
+    }
+    
+    .beneficios {
+        width: 100%;
+        max-width: 100%;
+        font-size: 12pt;
+        padding: 15px;
+    }
+    
+    .cliente {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    
+    .titulo-promocao {
+        font-size: 16pt;
+        width: 100%;
+    }
+    
+    .preco {
+        font-size: 36pt;
+    }
+    
+    .preco-antigo {
+        font-size: 16pt;
+    }
+    
+    .formulario {
+        padding: 20px 15px;
+        margin: 10px;
+    }
+    
+    .formulario input,
+    .formulario textarea,
+    .formulario select {
+        font-size: 12pt;
+        padding: 10px;
+    }
+    
+    button {
+        height: 70px;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .numero-cartao input,
+    .validade-cartao input,
+    .cvv-cartao input {
+        font-size: 12pt;
+        padding: 10px;
+    }
+    
+    .secao-clientes h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 8px;
+    }
+    
+    .logo {
+        font-size: 20pt;
+    }
+    
+    .navbar a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .conteudo h1 {
+        font-size: 1.2em;
+    }
+    
+    .conteudo h2 {
+        font-size: 1em;
+    }
+    
+    .beneficios {
+        font-size: 11pt;
+        padding: 12px;
+    }
+    
+    .cliente {
+        padding: 12px;
+        margin: 8px 0;
+    }
+    
+    .nome-cliente {
+        font-size: 11pt;
+    }
+    
+    .comentario-cliente {
+        font-size: 10pt;
+    }
+    
+    .titulo-promocao {
+        font-size: 14pt;
+        margin-top: 30px;
+    }
+    
+    .preco {
+        font-size: 28pt;
+    }
+    
+    .preco-antigo {
+        font-size: 14pt;
+    }
+    
+    .formulario {
+        padding: 15px 10px;
+        margin: 5px;
+    }
+    
+    .formulario input,
+    .formulario textarea,
+    .formulario select {
+        font-size: 11pt;
+        padding: 8px;
+    }
+    
+    button {
+        height: 60px;
+        font-size: 24px;
+    }
+    
+    .pix-info img {
+        width: 150px;
+    }
+}
